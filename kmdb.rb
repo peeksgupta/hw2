@@ -309,8 +309,6 @@ for movie in all_movie
     puts "#{title} #{year_released} #{rated} #{studio_name}"
 end
 
-
-
 # Prints a header for the cast output
 puts ""
 puts "Top Cast"
