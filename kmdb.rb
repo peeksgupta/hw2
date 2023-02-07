@@ -241,7 +241,6 @@ role_new ["actor_id"] = actor_2["id"]
 role_new ["character_name"] = "Alfred"
 role_new.save
 
-
 movie_2 = Movie.find_by({"title" => "The Dark Knight"})
 actor_8 = Actor.find_by({"name" => "Maggie Gyllenhaal"})
 role_new = Role.new
