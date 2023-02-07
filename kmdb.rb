@@ -287,7 +287,7 @@ actor_11 = Actor.find_by({"name" => "Anne Hathaway"})
 role_new = Role.new
 role_new ["movie_id"] = movie_3["id"]
 role_new ["actor_id"] = actor_11["id"]
-role_new ["character_name"] = "Selina Kyle"
+role_new ["character_name"] = "Selena Kyle"
 role_new.save
 
 puts "roles: #{Role.all.count}"
