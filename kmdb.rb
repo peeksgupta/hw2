@@ -304,7 +304,7 @@ for movie in all_movie
     year_released = movie["year_released"]
     rated = movie["rated"]
     studio = Studio.find_by({"id" => movie["studio_id"]})
-    #puts studio.inspect
+    puts studio.inspect
     studio_name = studio["name"]
     puts "#{title} #{year_released} #{rated} #{studio_name}"
 end
