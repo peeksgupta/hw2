@@ -75,13 +75,18 @@ Actor.destroy_all
 Role.destroy_all
 
 # Generate models and tables, according to the domain model.
+
 # rails generate model Studio
+# add columns
 # rails db:migrate
 # rails generate model Movie
+# add columns
 # rails db:migrate
 # rails generate model Actor
+# add columns
 # rails db:migrate
 # rails generate model Role
+# add columns
 # rails db:migrate
 
 # Insert data into the database that reflects the sample data shown above.
@@ -298,7 +303,10 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 
-for movie in all_movie
+all_movies = Movie.all
+#puts all_movies.inspect
+
+for movie in all_movies
     title = movie["title"]
     year_released = movie["year_released"]
     rated = movie["rated"]
